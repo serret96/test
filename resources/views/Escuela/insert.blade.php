@@ -47,16 +47,10 @@
                 </div>
                 </form>
             </div>
-
-
         </div>
-
-
-
     </div>
 
 @stop
-
 
 
 @section('css')
