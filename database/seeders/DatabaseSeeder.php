@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
 
         $user->name = "admin";
         $user->email = "admin@admin.com";
-        $user->password = "password";
+        $user->password = '$2y$10$NAqpWF07SzRao9tfICNWiuHZsaY032r0SoqoGvvgeql0bkzdfjgvi';
 
         $user->save();
 
