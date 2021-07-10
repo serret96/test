@@ -6,11 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\Alumno;
 use App\Models\Escuela;
 
-use Symfony\Component\Console\Input\Input;
-
 class AlumnoController extends Controller
 {
     /**
+     * Load the table rows and generate the pagination
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
@@ -24,6 +23,7 @@ class AlumnoController extends Controller
     }
 
     /**
+     * Function load the view to generate new alumnes, also include data from escuela
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function create()
@@ -34,6 +34,7 @@ class AlumnoController extends Controller
     }
 
     /**
+     * Generate the new alumne
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -53,6 +54,7 @@ class AlumnoController extends Controller
     }
 
     /**
+     * Function to call the of edit
      * @param Alumno $alumno
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
@@ -65,6 +67,7 @@ class AlumnoController extends Controller
 
 
     /**
+     * Function to update
      * @param Request $request
      * @param Alumno $alumno
      * @return \Illuminate\Http\RedirectResponse
@@ -85,6 +88,7 @@ class AlumnoController extends Controller
     }
 
     /**
+     * Function to delete alumno
      * @param Alumno $alumno
      * @return \Illuminate\Http\RedirectResponse
      */

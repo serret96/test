@@ -9,6 +9,7 @@ use Symfony\Component\Console\Input\Input;
 class EscuelaController extends Controller
 {
     /**
+     * Load the table rows and generate the pagination
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
